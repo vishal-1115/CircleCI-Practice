@@ -5,8 +5,8 @@ jobs:
     docker:
       - image : cimg/python:3.11
     steps:
-      -checkout:
-      -run: python main.py
+      - checkout
+      - run: python main.py
 
 workflows:
   build_now:
